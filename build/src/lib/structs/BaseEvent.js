@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BaseEvent = void 0;
+class BaseEvent {
+    name;
+    func;
+    constructor(name, func = "on") {
+        this.name = name;
+        this.func = func;
+    }
+    async execute(client, ...data) {
+        throw new Error("This Event does not have a execute function");
+    }
+}
+exports.BaseEvent = BaseEvent;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQmFzZUV2ZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vc3JjL2xpYi9zdHJ1Y3RzL0Jhc2VFdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHQSxNQUFhLFNBQVM7SUFDbEIsSUFBSSxDQUFxQjtJQUN6QixJQUFJLENBQXVCO0lBQzNCLFlBQVksSUFBd0IsRUFBRSxPQUE4QixJQUFJO1FBQ3BFLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFBO1FBQ2hCLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFBO0lBQ3BCLENBQUM7SUFDRCxLQUFLLENBQUMsT0FBTyxDQUFDLE1BQWlCLEVBQUUsR0FBRyxJQUFTO1FBQ3pDLE1BQU0sSUFBSSxLQUFLLENBQUMsNkNBQTZDLENBQUMsQ0FBQTtJQUNsRSxDQUFDO0NBQ0o7QUFWRCw4QkFVQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENsaWVudEV2ZW50cyB9IGZyb20gXCJkaXNjb3JkLmpzXCI7XHJcbmltcG9ydCB7IEJvdENsaWVudCB9IGZyb20gXCIuLi9Cb3RDbGllbnRcIjtcclxuXHJcbmV4cG9ydCBjbGFzcyBCYXNlRXZlbnQge1xyXG4gICAgbmFtZToga2V5b2YgQ2xpZW50RXZlbnRzO1xyXG4gICAgZnVuYzogXCJvblwiIHwgXCJvbmNlXCIgfCBcIm9mZlwiXHJcbiAgICBjb25zdHJ1Y3RvcihuYW1lOiBrZXlvZiBDbGllbnRFdmVudHMsIGZ1bmM6IFwib25cIiB8IFwib25jZVwiIHwgXCJvZmZcIiA9IFwib25cIikge1xyXG4gICAgICAgIHRoaXMubmFtZSA9IG5hbWVcclxuICAgICAgICB0aGlzLmZ1bmMgPSBmdW5jXHJcbiAgICB9XHJcbiAgICBhc3luYyBleGVjdXRlKGNsaWVudDogQm90Q2xpZW50LCAuLi5kYXRhOiBhbnkpOiBQcm9taXNlPGFueT4ge1xyXG4gICAgICAgIHRocm93IG5ldyBFcnJvcihcIlRoaXMgRXZlbnQgZG9lcyBub3QgaGF2ZSBhIGV4ZWN1dGUgZnVuY3Rpb25cIilcclxuICAgIH1cclxufSJdfQ==

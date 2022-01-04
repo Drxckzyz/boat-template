@@ -4,7 +4,10 @@
   "description": "A Template you can use for your Discord bots ",
   "main": "build/src/index.js",
   "scripts": {
-    "test": "npm run build"
+    "test": "npm run build",
+    "build": "tsc --build",
+    "prestart": "npm run build",
+    "deploy": "node build/scripts/delpoy.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
   },
   "dependencies": {
     "@discordjs/builders": "^0.11.0",
+    "@discordjs/rest": "*",
     "discord.js": "^13.5.0"
   }
 }

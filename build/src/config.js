@@ -1,0 +1,16 @@
+"use strict";
+//Rename this file to "config.ts"
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DEPLOY_COMMANDS_GLOBAL = exports.GUILD_ID = exports.CLIENT_ID = exports.CLIENT_OPTIONS = exports.BOT_TOKEN = void 0;
+/**
+ * @description Token for your discord bot
+ * @link https://discord.com/developers/applications
+ */
+exports.BOT_TOKEN = "Replace with your bot token";
+exports.CLIENT_OPTIONS = {
+    intents: []
+};
+exports.CLIENT_ID = "123456";
+exports.GUILD_ID = "12345";
+exports.DEPLOY_COMMANDS_GLOBAL = false;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsaUNBQWlDOzs7QUFJakM7OztHQUdHO0FBQ1UsUUFBQSxTQUFTLEdBQUcsNkJBQTZCLENBQUE7QUFFekMsUUFBQSxjQUFjLEdBQWtCO0lBQ3pDLE9BQU8sRUFBRSxFQUFFO0NBQ2QsQ0FBQTtBQUVZLFFBQUEsU0FBUyxHQUFHLFFBQVEsQ0FBQTtBQUVwQixRQUFBLFFBQVEsR0FBRyxPQUFPLENBQUE7QUFFbEIsUUFBQSxzQkFBc0IsR0FBRyxLQUFLLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIvL1JlbmFtZSB0aGlzIGZpbGUgdG8gXCJjb25maWcudHNcIlxyXG5cclxuaW1wb3J0IHsgQ2xpZW50T3B0aW9ucyB9IGZyb20gXCJkaXNjb3JkLmpzXCJcclxuXHJcbi8qKlxyXG4gKiBAZGVzY3JpcHRpb24gVG9rZW4gZm9yIHlvdXIgZGlzY29yZCBib3RcclxuICogQGxpbmsgaHR0cHM6Ly9kaXNjb3JkLmNvbS9kZXZlbG9wZXJzL2FwcGxpY2F0aW9uc1xyXG4gKi9cclxuZXhwb3J0IGNvbnN0IEJPVF9UT0tFTiA9IFwiUmVwbGFjZSB3aXRoIHlvdXIgYm90IHRva2VuXCJcclxuXHJcbmV4cG9ydCBjb25zdCBDTElFTlRfT1BUSU9OUzogQ2xpZW50T3B0aW9ucyA9IHtcclxuICAgIGludGVudHM6IFtdXHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBDTElFTlRfSUQgPSBcIjEyMzQ1NlwiXHJcblxyXG5leHBvcnQgY29uc3QgR1VJTERfSUQgPSBcIjEyMzQ1XCJcclxuXHJcbmV4cG9ydCBjb25zdCBERVBMT1lfQ09NTUFORFNfR0xPQkFMID0gZmFsc2UiXX0=

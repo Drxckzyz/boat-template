@@ -1,6 +1,6 @@
 import { Client, Collection } from "discord.js";
 import { Toolbox } from "./modules/Toolbox";
-import { BaseEvent } from "./structures/BaseEvent";
+import { BaseEvent } from "./structs/BaseEvent";
 
 export class BotClient extends Client {
     commands: Collection<string, any>;
@@ -14,6 +14,10 @@ export class BotClient extends Client {
     }
 
     start(token: string) {
+        if (!token) throw new Error("Token must be provided")
+        else if (typeof token != "string") throw new TypeError("Token must be a string")
+        this.toolbox.handleEvents()
+        this.toolbox.handleCommands()
         return super.login(token)
     }
 }

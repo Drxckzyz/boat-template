@@ -1,5 +1,5 @@
 import { BotClient } from "../lib/BotClient";
-import { BaseEvent } from "../lib/structures/BaseEvent";
+import { BaseEvent } from "../lib/structs/BaseEvent";
 
 export default class extends BaseEvent {
     constructor() {

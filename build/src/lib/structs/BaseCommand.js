@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BaseCommand = void 0;
+class BaseCommand {
+    data;
+    ephemeral;
+    constructor(data, ephemeral = false) {
+        this.data = data;
+        this.ephemeral = ephemeral;
+    }
+    async execute(client, command) {
+        throw new Error("Command does not have its own execute function");
+    }
+}
+exports.BaseCommand = BaseCommand;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQmFzZUNvbW1hbmQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvbGliL3N0cnVjdHMvQmFzZUNvbW1hbmQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsTUFBYSxXQUFXO0lBQ3BCLElBQUksQ0FBTTtJQUNWLFNBQVMsQ0FBVTtJQUNuQixZQUFZLElBQVMsRUFBRSxZQUFxQixLQUFLO1FBQzdDLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFBO1FBQ2hCLElBQUksQ0FBQyxTQUFTLEdBQUcsU0FBUyxDQUFBO0lBQzlCLENBQUM7SUFDRCxLQUFLLENBQUMsT0FBTyxDQUFDLE1BQWlCLEVBQUUsT0FBMkI7UUFDeEQsTUFBTSxJQUFJLEtBQUssQ0FBQyxnREFBZ0QsQ0FBQyxDQUFBO0lBQ3JFLENBQUM7Q0FDSjtBQVZELGtDQVVDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tbWFuZEludGVyYWN0aW9uLCBQZXJtaXNzaW9uU3RyaW5nIH0gZnJvbSBcImRpc2NvcmQuanNcIjtcclxuaW1wb3J0IHsgQm90Q2xpZW50IH0gZnJvbSBcIi4uL0JvdENsaWVudFwiO1xyXG5cclxuZXhwb3J0IGNsYXNzIEJhc2VDb21tYW5kIHtcclxuICAgIGRhdGE6IGFueTtcclxuICAgIGVwaGVtZXJhbDogYm9vbGVhbjtcclxuICAgIGNvbnN0cnVjdG9yKGRhdGE6IGFueSwgZXBoZW1lcmFsOiBib29sZWFuID0gZmFsc2UpIHtcclxuICAgICAgICB0aGlzLmRhdGEgPSBkYXRhXHJcbiAgICAgICAgdGhpcy5lcGhlbWVyYWwgPSBlcGhlbWVyYWxcclxuICAgIH1cclxuICAgIGFzeW5jIGV4ZWN1dGUoY2xpZW50OiBCb3RDbGllbnQsIGNvbW1hbmQ6IENvbW1hbmRJbnRlcmFjdGlvbik6IFByb21pc2U8YW55IHwgdm9pZD4ge1xyXG4gICAgICAgIHRocm93IG5ldyBFcnJvcihcIkNvbW1hbmQgZG9lcyBub3QgaGF2ZSBpdHMgb3duIGV4ZWN1dGUgZnVuY3Rpb25cIilcclxuICAgIH1cclxufSJdfQ==
